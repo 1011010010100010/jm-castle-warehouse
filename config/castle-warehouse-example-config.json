@@ -1,0 +1,66 @@
+{
+  "system": {
+    "name": "dev: castle-warehouse",
+    "host": "your-host-name",
+    "port": 53002,
+    "certs": {
+      "ca": "cert/optional-your-ca-cert.pem",
+      "hostCert": "cert/your-host-cert.crt",
+      "hostKey": "cert/your-host-key.key"
+    },
+    "client": { "path": "./node_modules/jm-castle-warehouse-client/build" }
+  },
+  "client": {
+    "a-special-client": {
+      "id": "a-special-client",
+      "ip": ["::ffff:000\\.000\\.000.*"],
+      "user": "castle"
+    }
+  },
+  "user": {
+    "castle": {
+      "password": "castle",
+      "roles": ["admin", "external", "internal"]
+    },
+    "admin": {
+      "password": "castle",
+      "roles": ["admin"]
+    },
+    "internal": {
+      "password": "castle",
+      "roles": ["external", "internal"]
+    },
+    "external": {
+      "password": "castle",
+      "roles": ["external"]
+    }
+  },
+  "persistence": {
+    "serverPersistence": {
+      "type": "maria-db",
+      "isDefault": true,
+      "database": "castle_warehouse",
+      "host": "x.x.x.x",
+      "port": 3306,
+      "user": "root",
+      "password": "xxx"
+    }
+  },
+  "imageStore": {
+    "type": "file-system",
+    "path": "c:/whereever-you-like",
+    "maxWidth": 400,
+    "maxHeight": 400
+  },
+  "mail": {
+    "defaultSender": {
+      "type": "smtp",
+      "isDefault": true,
+      "host": "mail.gmx.net",
+      "port": 465,
+      "user": "your-mail-address",
+      "password": "xxx",
+      "defaultReceivers": [{ "address": "your-default-receiver" }]
+    }
+  }
+}
