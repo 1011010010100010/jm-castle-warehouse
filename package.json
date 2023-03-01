@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-warehouse",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "type": "module",
   "module": "./build",
   "private": false,
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.2",
-    "jm-castle-warehouse-client": "^0.9.8",
+    "jm-castle-warehouse-client": "^0.9.9",
     "jm-castle-warehouse-server": "^0.9.8",
     "jm-castle-warehouse-types": "^0.14.6",
     "jm-castle-types": "^0.1.1"
