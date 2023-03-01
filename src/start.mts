@@ -11,6 +11,7 @@ import {
 
 config();
 
+console.log("running in: " + process.cwd());
 // load config and create CastleWarehouse
 const filePath = configFilePath();
 console.log("reading config from file:", filePath);
