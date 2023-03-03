@@ -1,7 +1,7 @@
 import { config } from "dotenv";
 import { startCw } from "./start-cw.mjs";
 
-config();
+config({ path: "./dev.env" });
 
 await startCw();
 
