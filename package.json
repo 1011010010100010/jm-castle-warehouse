@@ -8,11 +8,11 @@
     "prebuild": "eslint \"./src/**\"",
     "build": "tsc --project tsconfig.json",
     "start": "node ./build/start.mjs",
-    "dev": "nodemon --ext '*.mts' -x \"npm run build && npm run start \"",
+    "start-dev": "node ./build/start-dev.mjs",
+    "dev": "nodemon --ext '*.mts' -x \"npm run build && npm run start-dev \"",
     "dev:serve": "cross-env NODE_ENV=development ts-node-dev --inspect=9229 --nolazy --respawn ./src -r ts-node/register src/."
   },
   "dependencies": {
-    "dotenv": "^16.0.2",
     "jm-castle-warehouse-client": "^0.9.9",
     "jm-castle-warehouse-server": "^0.9.8",
     "jm-castle-warehouse-types": "^0.14.6",
@@ -25,6 +25,7 @@
     "@types/luxon": "^3.1.0",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
+    "dotenv": "^16.0.2",
     "eslint": "^8.23.0",
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",

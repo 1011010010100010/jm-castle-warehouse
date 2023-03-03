@@ -54,3 +54,4 @@ This file kills pm2. This is necessary, if you have changed the ecosystem.config
 ### Autostart pm2 on reboot
 
 see: https://www.npmjs.com/package/pm2-windows-startup
+It is necessary to have a auto-logon for the windows user, for which pm2 was installed, to take effect.

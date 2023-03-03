@@ -1,6 +1,9 @@
+import { config } from "dotenv";
 import { startCw } from "./start-cw.mjs";
 
-startCw();
+config();
+
+await startCw();
 
 const exitHandler: NodeJS.ExitListener = (exitCode) => {
   console.log(`exit with code: ${exitCode}`);
