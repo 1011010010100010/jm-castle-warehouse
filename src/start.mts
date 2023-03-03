@@ -8,10 +8,15 @@ import {
   readJsonFile,
   setCurrentSystem,
 } from "jm-castle-warehouse-server";
+import { DateTime } from "luxon";
 
 config();
 
-console.log("running in: " + process.cwd());
+console.log(
+  `starting in: ${process.cwd()} at ${DateTime.now().toFormat(
+    "yyyy-LL-dd hh:mm:ss"
+  )}`
+);
 // load config and create CastleWarehouse
 const filePath = configFilePath();
 console.log("reading config from file:", filePath);

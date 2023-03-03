@@ -13,9 +13,7 @@ The files also assume, that
 - jm-castle-warehouse will be installed within a directory called "castle-warehouse". If you like to use a different name, you have to exchange "castle-warehouse" with your directory.
 - the configuration file is placed in a directory called "castle-warehouse-config"
 
-The files
-
-Paste all files from the "win" folder into "c:/castle-live".
+Copy all files from the "win" folder into "c:/castle-live".
 
 ## Execute the .bat files
 
@@ -52,3 +50,7 @@ This file uses pm2 to stop jm-castle-warehouse.
 ### kill-castle-warehouse.bat
 
 This file kills pm2. This is necessary, if you have changed the ecosystem.config.js, to take effect.
+
+### Autostart pm2 on reboot
+
+see: https://www.npmjs.com/package/pm2-windows-startup

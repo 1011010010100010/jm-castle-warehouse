@@ -16,7 +16,8 @@
     "jm-castle-warehouse-client": "^0.9.9",
     "jm-castle-warehouse-server": "^0.9.8",
     "jm-castle-warehouse-types": "^0.14.6",
-    "jm-castle-types": "^0.1.1"
+    "jm-castle-types": "^0.1.1",
+    "luxon": "^3.2.1"
   },
   "devDependencies": {
     "@types/base-64": "^1.0.0",
