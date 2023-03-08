@@ -2,7 +2,9 @@ import { createServer } from "https";
 import {
   CastleWarehouse,
   configFilePath,
+  getCurrentSystem,
   newExpressApp,
+  PubSubWebsocketServer,
   readJsonFile,
   setCurrentSystem,
 } from "jm-castle-warehouse-server";
@@ -35,6 +37,8 @@ export const startCw = async () => {
       },
       app
     );
+
+    new PubSubWebsocketServer(server, getCurrentSystem);
 
     const onListening = () => {
       const addr = server.address();
