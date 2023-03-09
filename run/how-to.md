@@ -38,6 +38,11 @@ This file uses npm to build the runnable jm-castle-warehouse.
 The folder "castle-warehouse-config" includes an example config file.
 You have to edit this file and fill in the values for your installation, e.g. host for your mariaDB.
 
+### cw-config.json
+
+The folder "castle-warehouse-cert" includes an example file, which you will need for creating certificates.
+Follow the instructions of "creating-certificates.md" in this folder to create your own certificates.
+
 ### start-castle-warehouse.bat
 
 This file uses pm2 to start jm-castle-warehouse.
