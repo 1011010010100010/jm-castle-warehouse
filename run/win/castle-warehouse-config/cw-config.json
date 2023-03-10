@@ -54,6 +54,14 @@
     "maxWidth": 400,
     "maxHeight": 400
   },
+  "systemBackupStore": {
+    "type": "file-system",
+    "path": "c:/castle-live/castle-warehouse-backup"
+  },
+  "tempStore": {
+    "type": "file-system",
+    "path": "c:/castle-live/castle-warehouse-temp"
+  },
   "mail": {
     "defaultSender": {
       "type": "smtp",

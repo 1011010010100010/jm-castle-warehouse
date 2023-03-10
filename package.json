@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-warehouse",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "type": "module",
   "module": "./build",
   "private": false,
@@ -14,9 +14,9 @@
     "dev:serve": "cross-env NODE_ENV=development ts-node-dev --inspect=9229 --nolazy --respawn ./src -r ts-node/register src/."
   },
   "dependencies": {
-    "jm-castle-warehouse-client": "^1.1.2",
-    "jm-castle-warehouse-server": "^1.1.1",
-    "jm-castle-warehouse-types": "^0.14.9",
+    "jm-castle-warehouse-client": "^1.2.0",
+    "jm-castle-warehouse-server": "^1.2.0",
+    "jm-castle-warehouse-types": "^0.15.2",
     "jm-castle-types": "^0.1.2",
     "luxon": "^3.2.1"
   },
