@@ -49,3 +49,7 @@ see: https://pm2.keymetrics.io/
 Have a look into the "run" folder.
 
 Currently the description is Windows only.
+
+## When installing a new version
+
+Please check the README-server.md and follow the instructions for the new verion(s).
