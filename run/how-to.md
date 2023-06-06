@@ -5,7 +5,7 @@ Of course the installation process could be improved and may be it will ;-).
 
 ## Create directory and copy files
 
-The files in the "win" folder assume, that you have created a directory "c:/castle-live".
+The files in the "win" folder (within pm2 and servivce) assume, that you have created a directory "c:/castle-live".
 If you use a different directory, you have to exchange "c:/castle-live" with your directory.
 
 The files also assume, that
@@ -23,6 +23,9 @@ This file is doing two things:
 It deletes the directory "castle-warehouse" including all it´s content.
 Then it uses git to clone the current version of jm-castle-warehouse into the directory "castle-warehouse".
 
+If you are running castle-warehouse as a service, then it is necessary to stop the service
+before executing this file.
+
 ### install-modules-castle-warehouse.bat
 
 This file uses npm to install the necessary npm packages.
@@ -31,7 +34,36 @@ This file uses npm to install the necessary npm packages.
 
 This file uses npm to build the runnable jm-castle-warehouse.
 
-## Start jm-castle-warehouse
+## Start jm-castle-warehouse as service
+
+### install-service.bat
+
+This file uses install-service.js, which needs the npm package "node-windows".
+Install node-windows globally, using
+
+npm install -g node-windows
+
+and after installing use
+
+npm link node-windows.
+
+Edit the install-service.bat so that the NODE_PATH fits your path.
+The path depends on your user.
+
+Edit the install-service.bat so that the CONFIG points to your config file.
+
+Then execute the install-service.bat file and accept the dialogs.
+
+After executing the service should run. Otherwise something went wrong.
+
+### uninstall-service.bat
+
+This file uses uninstall-service.js, which needs the npm package "node-windows" (see above install-service).
+
+Edit the uninstall-service.bat so that the NODE_PATH fits your path.
+The path depends on your user.
+
+## Start jm-castle-warehouse manually
 
 ### cw-config.json
 
