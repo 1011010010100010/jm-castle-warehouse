@@ -1,6 +1,6 @@
 {
   "name": "jm-castle-warehouse",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "type": "module",
   "module": "./build",
   "private": false,

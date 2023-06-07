@@ -26,6 +26,9 @@ Then it uses git to clone the current version of jm-castle-warehouse into the di
 If you are running castle-warehouse as a service, then it is necessary to stop the service
 before executing this file.
 
+If you are running castle-warehouse as a service, then it is necessary to execute install-service.bat again after executing
+build-castle-warehouse.bat
+
 ### install-modules-castle-warehouse.bat
 
 This file uses npm to install the necessary npm packages.
@@ -55,6 +58,12 @@ Edit the install-service.bat so that the CONFIG points to your config file.
 Then execute the install-service.bat file and accept the dialogs.
 
 After executing the service should run. Otherwise something went wrong.
+
+The installation includes creation of a folder "daemon" within the folder where the start-script is, e.g.
+when the script is "C:\castle-live\castle-warehouse\build\start.mjs" then "daemon" is created in
+"C:\castle-live\castle-warehouse\build".
+
+The daemoin folder includes the files which are necessary for the service excution and two log files.
 
 ### uninstall-service.bat
 
