@@ -79,7 +79,7 @@ The path depends on your user.
 The folder "castle-warehouse-config" includes an example config file.
 You have to edit this file and fill in the values for your installation, e.g. host for your mariaDB.
 
-### cw-config.json
+### creating-certificates.md
 
 The folder "castle-warehouse-cert" includes an example file, which you will need for creating certificates.
 Follow the instructions of "creating-certificates.md" in this folder to create your own certificates.
