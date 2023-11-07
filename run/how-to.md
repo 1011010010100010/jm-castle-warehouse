@@ -1,7 +1,7 @@
 # How to make it run
 
-Currently the description is Windows only.
-Of course the installation process could be improved and may be it will ;-).
+This description is Windows only.
+For Ubuntu/Debian based version see how-to-linux.md
 
 ## Create directory and copy files
 
