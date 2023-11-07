@@ -1,0 +1,76 @@
+{
+  "system": {
+    "name": "xxx",
+    "host": "xxx",
+    "port": 53002,
+    "certs": {
+      "ca": "xxx/castle-live/castle-warehouse-cert/myCA.pem",
+      "hostCert": "xxx/castle-live/castle-warehouse-cert/your-host.crt",
+      "hostKey": "xxx/castle-live/castle-warehouse-cert/your-host.key"
+    },
+    "client": {
+      "path": "xxx/castle-live/castle-warehouse/node_modules/jm-castle-warehouse-client/dist"
+    }
+  },
+  "client": {
+    "a-special-client": {
+      "id": "a-special-client",
+      "ip": ["::ffff:000\\.000\\.000.*"],
+      "user": "castle"
+    }
+  },
+  "user": {
+    "castle": {
+      "password": "castle",
+      "roles": ["admin", "external", "internal"]
+    },
+    "admin": {
+      "password": "castle",
+      "roles": ["admin"]
+    },
+    "internal": {
+      "password": "castle",
+      "roles": ["external", "internal"]
+    },
+    "external": {
+      "password": "castle",
+      "roles": ["external"]
+    }
+  },
+  "persistence": {
+    "serverPersistence": {
+      "type": "maria-db",
+      "isDefault": true,
+      "database": "xxx",
+      "host": "xxx",
+      "port": 3306,
+      "user": "xxx",
+      "password": "xxx"
+    }
+  },
+  "imageStore": {
+    "type": "file-system",
+    "path": "xxx/castle-live/castle-warehouse-imagestore",
+    "maxWidth": 400,
+    "maxHeight": 400
+  },
+  "systemBackupStore": {
+    "type": "file-system",
+    "path": "xxx/castle-live/castle-warehouse-backup"
+  },
+  "tempStore": {
+    "type": "file-system",
+    "path": "xxx/castle-live/castle-warehouse-temp"
+  },
+  "mail": {
+    "defaultSender": {
+      "type": "smtp",
+      "isDefault": true,
+      "host": "mail.gmx.net",
+      "port": 465,
+      "user": "xxx",
+      "password": "xxx",
+      "defaultReceivers": [{ "address": "xxx" }]
+    }
+  }
+}
