@@ -37,15 +37,20 @@ This file uses npm to install the necessary npm packages.
 
 This file uses npm to build the runnable jm-castle-warehouse.
 
-## Start jm-castle-warehouse as service (not currently in the project)
+## Start jm-castle-warehouse as service 
 
-### install-service.sh
+### to do that we use pm2 on startup
 
-will follow soon
+check out the documentation from github https://github.com/Unitech/pm2#startup-script-generation
 
-### uninstall-service.sh
+# Generate Startup Script
+$ pm2 startup
 
-will follow soon
+# Freeze your process list across server restart
+$ pm2 save
+
+# Remove Startup Script
+$ pm2 unstartup
 
 ## Start jm-castle-warehouse manually
 
