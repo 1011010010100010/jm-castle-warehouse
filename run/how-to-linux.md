@@ -43,13 +43,13 @@ This file uses npm to build the runnable jm-castle-warehouse.
 
 check out the documentation from github https://github.com/Unitech/pm2#startup-script-generation
 
-# Generate Startup Script
+### Generate Startup Script
 $ pm2 startup
 
-# Freeze your process list across server restart
+### Freeze your process list across server restart
 $ pm2 save
 
-# Remove Startup Script
+### Remove Startup Script
 $ pm2 unstartup
 
 ## Start jm-castle-warehouse manually
