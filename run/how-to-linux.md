@@ -81,7 +81,3 @@ This file kills pm2. This is necessary, if you have changed the ecosystem.config
 
 After the first start of pm2 (including castle-warehouse) execute this file.
 It ensures that for the next start and resurrect the current status will be used.
-
-### Autostart pm2 on reboot
-
-will follow soon
